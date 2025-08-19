@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Moderasyon Botu Kullanım Klavuzu</title>
+
+    <style>
+        body{
+            background-color: #1e1e2f;
+            color: #e0e0e0;
+            text-decoration: none;
+        }
+        div{
+            margin-bottom: 50px;
+        }
+    </style>
+
+</head>
+<body>
+
+<span>
+    <h1>Moderasyon Botu Kullanım Klavuzu</h1>
+    <h2>İçindekiler:</h2>
+</span>
+
+<div>
+    <ul>
+        <li>
+            <a href="#sistemler">
+                <h3>
+                    Sistemler
+                </h3>
+            </a>
+        </li>
+        <li>
+            <a href="#komutlar">
+                <h3>
+                    Komutlar
+                </h3>
+            </a>
+        </li>
+        <li>
+            <a href="#örnekler">
+                <h3>
+                    Örnekler
+                </h3>
+            </a>
+        </li>
+        <li>
+            <a href="#notlar">
+                <h3>
+                    Notlar
+                </h3>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div>
+    <span>
+        <h2 id="sistemler">
+            Sistemler
+        </h2>
+        <ul>
+            <span>
+                <li>
+                    <h3>
+                        Moderasyon Sistemleri
+                    </h3>
+                </li>
+                <p>
+                    Moderasyon Sistemleri botun temelidir. Warn, Mute, Kick ve Ban komutları bu sistem içinde yer alır. Bu sistemler çoğunlukla kullanacağınız sistemlerdir.
+                </p>
+            </span>
+            <span>
+                <li>
+                    <h3>
+                        Bot Sistemleri
+                    </h3>
+                </li>
+                <p>
+                    Bot içindeki basit sistemlerdir. bilgi komutu ve mute komutundaki süre hesaplama sistemi buna örnektir. Bu sistemleri kullanmanız genelde gerekmez. 
+                </p>
+            </span>
+            <span>
+                <li>
+                    <h3>
+                        Sorgu Sistemi
+                    </h3>
+                </li>
+                <p>
+                    Sorgu Sistemi, Moderasyon Sistemleri tarafından oluşturulan ID'leri anlamdırmak için kullanılır. Moderasyon Sistemleri tarafından oluşturulan ID ve bu ID'nin hangi kayıtta olduğu girilerek o kayda ait detaylı bilgiler görüntülenebilir.
+                </p>
+            </span>
+            <span>
+                <li>
+                    <h3>
+                        Log Sistemi
+                    </h3>
+                </li>
+                <p>
+                    Log Sistemi, moderasyon botunun kendisinde bulunmaz. Ancak moderasyon botu, yönetim botu ile entegre çalışır. Örneğin moderasyon botunda yapılan bir banlama işleminin logu sorgu ile çıkartılabilir. Yada log kanalına gönderilen mesajdaki ID ile işleme ait detaylı bilgi elde edilebilir. Bot bu sistemi sadece yönetici iznine sahip üyeler tarafından görüntülenebilen bir kanal üzerinden çalıştırır.
+                </p>
+            </span>
+        </ul>
+    </span>
+
+    <span>
+        <h2 id="komutlar">
+            Komutlar
+        </h2>
+        <ul>
+            <li>
+                <h3>
+                    bilgi
+                </h3>
+            </li>
+            <p>
+                Bot hakkındaki temel bilgileri verir. Bunlar; ping, Komut Kanalı ve Payload Kanalı idir. Ping botun gecikmesini gösteririr yani düşük olmalıdır. Komut Kanalı Moderasyon Komutlarını kullanabileceğiniz kanalı gösteririr.
+            </p>
+            <li>
+                <h3>
+                    warn
+                </h3>
+            </li>
+            <p>
+                Kullanıcıyı uyarmak için kullanılır. Moderasyon Sistemleri'ne dahildir. Komutu kullanmak için mute, kick veya ban yetkinizin olması yeterlidir.
+            </p>
+            <li>
+                <h3>
+                    mute
+                </h3>
+            </li>
+            <p>
+                Kullanıcıya zaman aşımı (mute) atmak için kullanılır. Moderasyon Sistemleri'ne dahildir. Komutu kullanmak için "Üyelere zaman Aşımı Uygula" izniniz olmalıdır.
+            </p>
+            <li>
+                <h3>
+                    kick
+                </h3>
+            </li>
+            <p>
+                Kullanıcıyı sunucudan atmak (kicklemek) için kullanılır. Moderasyon Sistemleri'ne dahildir. Komutu kullanmak için "Üyeleri At, Onayla ve Reddet" izniniz olmalıdır.
+            </p>
+            <li>
+                <h3>
+                    ban
+                </h3>
+            </li>
+            <p>Kullanıcıyı sunucudan yasaklamak (banlamak) için kullanılır. Moderasyon Sistemleri'ne dahildir. Komutu kullanmak için "Üyeleri Engelle" iznine sahip olmalıdır.</p>
+        </ul>
+    </span>
+
+    <span>
+        <h2 id="örnekler">
+            Örnekler
+        </h2>
+        <ul>
+            <li>
+                <h3>
+                    warn
+                </h3>
+                <img src="./resimler/warn.png" alt="warn">
+            </li>
+            <li>
+                <h3>
+                    mute
+                </h3>
+                <img src="./resimler/mute.png" alt="mute">
+            </li>
+            <li>
+                <h3>
+                    kick
+                </h3>
+            <img src="./resimler/kick.png" alt="kick">
+            </li>
+            <li>
+                <h3>
+                    ban
+                </h3>
+                <img src="./resimler/ban.png" alt="ban">
+            </li>
+            <li>
+                <h3>
+                    /kayıt_sorgula
+                </h3>
+                <img src="./resimler/kayıt_sorgula_1.png" alt="kayıt_sorgula_1">
+                <br>
+                <img src="./resimler/kayıt_sorgula_2.png" alt="kayıt_sorgula_2">
+            </li>
+        </ul>
+    </span>
+
+    <span>
+        <h2 id="notlar">
+            Notlar
+        </h2>
+        <p>
+            Moderasyon Komutlarını kullanırken botun size "bilgi" komutu ile vereceği komut kanalını kullanınız. Botun size verdiği kanallar dışında Moderasyon Komutlarını kullanamazsınız.
+        </p>
+        <p>
+            Üye girerken örnekte olduğu gibi etiketleyebilirisiniz ya da üyenin ID'sini girebilirsiniz. Tavsiye edilen yöntem ID idir.
+        </p>
+        <p>
+            Mute komutunda zaman girerken istediğiniz sırayla ay, hafta, gün, saat, dakika ve saniye girebilirsiniz. Tek dikkat etmeniz gereken şey süreyi yazarken sayı ile birleşik yazmanız. Örneğin:
+        </p>
+        <ul>
+            <li>
+                1ay
+            </li>
+            <li>
+                2hafta
+            </li>
+            <li>
+                5gün
+            </li>
+            <li>
+                10saat
+            </li>
+            <li>
+                30dakika
+            </li>
+            <li>
+                10saniye
+            </li>
+        </ul>
+        <p>
+            Ay ve hafta sadece 1 basamaklı sayı alarbilirken diğerleri (gün, saat, dakika ve saniye) 2 haneli sayı alabilir. Yani "10hafta" gibi bir kullanım yanlıştır. Ancak "1gün" kullanımında sorun yoktur.
+        </p>
+        <p>
+            Botun bilgi komutunda çıkan payload kanalına, eğer görebiliyorsanız, hiçbir mesaj yazmayınız. O kanal botun entegre log sistemi içindir.
+        </p>
+    </span>
+</div>
+</body>
+</html>
